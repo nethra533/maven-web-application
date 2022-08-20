@@ -32,8 +32,8 @@ sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@65
 catch(e){
 currentBuild.result = "FAILED"
 throw e
-finally {
-    notifyBuild(currentBuild.result)
+finally 
+notifyBuild(currentBuild.result)
 }   
 }   
 }  //node closing
