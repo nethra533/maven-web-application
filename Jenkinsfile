@@ -10,6 +10,7 @@ echo "The node label is: ${env.NODE_LABELS}"
 echo "The build number is: ${env.BUILD_NUMBER}"
 
 try{
+notifyBuild("STARTED")  
         
 stage('CheckoutCode'){
 git branch: 'development', credentialsId: 'b6527bb1-1c6b-4e35-be6e-ac36de1fcd4d', url: 'https://github.com/nethra533/maven-web-application.git'
