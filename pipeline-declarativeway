@@ -11,7 +11,7 @@ maven "maven3.8.5"
 
 triggers {
   pollSCM '* * * * *'
-   cron '* * * * *'
+  // cron '* * * * *'
 }
 options {
 timestamps()
@@ -23,7 +23,7 @@ stages{
 stage('checkoutCode'){
 steps{
 notifyBuild("started")
-git branch: "${params.Branchname", credentialsId: 'b6527bb1-1c6b-4e35-be6e-ac36de1fcd4d', url: 'https://github.com/nethra533/maven-web-application.git'
+git branch: "${params.Branchname}", credentialsId: 'b6527bb1-1c6b-4e35-be6e-ac36de1fcd4d', url: 'https://github.com/nethra533/maven-web-application.git'
 
 
 }
