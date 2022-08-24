@@ -52,8 +52,7 @@ try{
 stage('CheckoutCode'){
   
 sendSlackNotifications('STARTED')
-git branch: 'development', credentialsId: 'be624cd2-9c43-4b67-a251-6272a5386973', url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'
-
+git branch: '/*development', credentialsId: 'b6527bb1-1c6b-4e35-be6e-ac36de1fcd4d', url: 'https://github.com/nethra533/maven-web-application.git'
 }
 
 
